@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/avatar-8.png" alt="Arturo Espinosa G." width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Arturo Espinosa G.">Arturo Espinosa G.</h1>
+
+          <p class="title">Ingeniero en Software</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:arthurespgua@outlook.com" class="contact-link">arthurespgua@outlook.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Teléfono</p>
+
+              <a href="tel:+525619848110" class="contact-link">+52 56 1984 8110</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Fecha de Nacimiento</p>
+
+              <time datetime="1982-06-23">Noviembre 22, 1999</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Ubicación</p>
+
+              <address>Nicolás Romero, México</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a target="_blank" href="https://www.linkedin.com/in/arturoeg/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a target="_blank" href="https://github.com/arthurespgua" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>Sobre mi</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Curriculum</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portafolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contacto</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="sobre mi">
+
+        <header>
+          <h2 class="h2 article-title">Sobre mí</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Soy un ingeniero en software con más de 5 años de experiencia en el desarrollo de aplicaciones web y móviles.
+            Me especializo en crear soluciones innovadoras y eficientes que satisfacen las necesidades de mis clientes.
+          </p>
+
+          <p>
+            Mi pasión por la tecnología y el desarrollo de software me impulsa a mantenerme actualizado con las últimas
+            tendencias y herramientas del sector. Estoy comprometido con la calidad y la excelencia en cada proyecto que
+            emprendo.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Lo que realizo</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Diseño UI/UX</h4>
+
+                <p class="service-item-text">
+                  Genero diseños de interfaz de usuario que permitan contar con una experiencia de usuario óptima, fácil de usar y atractiva. 
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Desarrollo web</h4>
+
+                <p class="service-item-text">
+                  Me dedico a crear sitios web adatados a las necesidades de tu negocio o proyecto, siempre contemplando una metodogía "Mobile First".
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Desarrollo móvil</h4>
+
+                <p class="service-item-text">
+                  Construyo aplicaciones móviles personalizadas de forma nativa e híbrida para iOS y Android dependiendo de las necesidades del proyecto.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Infrastructura en la nube</h4>
+
+                <p class="service-item-text">
+                  Diseño e implemento arquitecturas basadas en microservicios para garantizar escalabilidad, flexibilidad y eficiencia en el desarrollo y despliegue de aplicaciones.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonios</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-10.png" alt="Aaron Brian G." width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Aaron Brian Hernández G.</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Arturo fue un gran compañero de equipo durante nuestro estancia en XY Unicorns y Boldmoves. Su dedicación y habilidades técnicas
+                    fueron fundamentales para el éxito de nuestros proyectos.
+                    Siempre dispuesto a ayudar y compartir su conocimiento,
+                    hizo que trabajar con él fuera una experiencia enriquecedora. Recomiendo encarecidamente a Arturo para cualquier equipo que busque un profesional talentoso y comprometido.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Constanza Llano" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Constanza Llano E.</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Conocí a Arturo cuando trabajamos juntos en un proyecto de desarrollo web para Dreamboosters, en donde demostró ser un profesional altamente capacitado y comprometido.
+                    Su habilidad para resolver problemas y su enfoque orientado a resultados fueron clave para el éxito del proyecto.
+                    Además, su actitud positiva y su capacidad para trabajar en equipo lo convierten en un valioso activo para cualquier organización.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Mariana Mújica" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Mariana Mújica H.</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Tuve el placer de colaborar con Arturo en varios proyectos de desarrollo de software en Boldmoves.
+                    Su enfoque meticuloso y su atención al detalle garantizan que cada proyecto se complete con la más alta calidad.
+                    Además, su capacidad para adaptarse rápidamente a nuevas tecnologías y metodologías lo convierte en un recurso invaluable para cualquier equipo de desarrollo.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Uriel Riveros" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Uriel Riveros M.</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Arturo es un ingeniero en software excepcional con una sólida ética de trabajo y una pasión por la innovación.
+                    Durante nuestro tiempo trabajando juntos en Boldmoves y Kredeo, demostró ser un líder natural, capaz de motivar y guiar al equipo hacia el logro de objetivos ambiciosos.
+                    Su capacidad para pensar estratégicamente y su enfoque centrado en el cliente lo convierten en un profesional destacado en su campo. Agradezco haber tenido la oportunidad de trabajar con él y espero colaborar nuevamente en el futuro.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="David Xicotencatl" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>David Javier Xicotencatl G.</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Trabajar con Arturo en varios proyectos de desarrollo de software en Boldmoves ha sido una experiencia increíblemente positiva.
+                    Su enfoque innovador y su capacidad para resolver problemas complejos han sido fundamentales para el éxito de nuestros proyectos conjuntos.
+                    Además, su actitud colaborativa y su disposición para compartir conocimientos han enriquecido enormemente nuestro equipo.
+                    Recomiendo encarecidamente a Arturo como un profesional talentoso y dedicado en el campo del desarrollo de software.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-7.png" alt="Ruben Romero" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Rubén Josaphat Romero C.</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Colabore con Arturo durante un par de meses pero fue suficiente para darme cuenta de su gran capacidad técnica y profesionalismo.
+                    En el tiempo de nuestra estancia en Dreamboosters logramos crear multiples proyectos exitosos que cumplieron con las expectativas de nuestros clientes.
+                    Sin duda alguna, Arturo es un gran activo para cualquier equipo de desarrollo de software.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="David Xicotencatl" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>David Xicotencatl</h4>
+
+              <time datetime="2021-06-14">15 Septiembre, 2024</time>
+
+              <div data-modal-text>
+                <p>
+                  Trabajar con Arturo en varios proyectos de desarrollo de software en Boldmoves ha sido una experiencia increíblemente positiva.
+                  Su enfoque innovador y su capacidad para resolver problemas complejos han sido fundamentales para el éxito de nuestros proyectos conjuntos.
+                  Además, su actitud colaborativa y su disposición para compartir conocimientos han enriquecido enormemente nuestro equipo.
+                  Recomiendo encarecidamente a Arturo como un profesional talentoso y dedicado en el campo del desarrollo de software.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Empresas con las que he colaborado</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1.png" alt="banco pagatodo logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2.png" alt="obten mas logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4.png" alt="boldmoves logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5.png" alt="the outdoors financial logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6.png" alt="dreamboosters logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-7.png" alt="xy logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-8.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-9.png" alt="teambits logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3.png" alt="totalplay logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#" style="max-width: 120px;">
+                <img src="./assets/images/logo-10.png" alt="proteco logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="curriculum">
+
+        <header>
+          <h2 class="h2 article-title">Currículum</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experiencia Laboral</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Totalplay - Fullstack Developer Sr.</h4>
+
+              <span>Octubre 2025 — Actualmente</span>
+
+              <p class="timeline-text">
+                Me encuentro desarrollando nuevas funcionalidades y mantenimiento de la plataforma web interna de facturación para los paquetes ofrecidos utilizando tecnologías como React con TS, SpringBoot, PostgreSQL y AWS.
+                Además de encontrarme con equipos multifuncionales para garantizar la integración fluida de nuevas características y mejoras en la experiencia del usuario.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Banco PagaTodo - Software Engineer</h4>
+
+              <span>Junio 2025 — Actualmente</span>
+
+              <p class="timeline-text">
+                Me dedico a liderar múltiples proyectos de desarrollo de software, colaborando con equipos multifuncionales para diseñar, desarrollar e implementar soluciones innovadoras que satisfacen las necesidades de sus proyectos actuales como lo son la aplicación móvil de Obten Más y FullCarga.
+                De igual forma participo en el desarrollo y despliegue de los proyectos, realizo pruebas unitarias, E2E y mantenimiento de aplicaciones existentes para garantizar su rendimiento óptimo y seguridad.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">The Outdoors Financial - Fullstack Developer Sr.</h4>
+
+              <span>Enero 2025 - Junio 2025</span>
+
+              <p class="timeline-text">
+                Formé parte de un equipo de desarrollo encargado de construir una solución tecnológica integral para una plataforma financiera enfocada en préstamos personales y créditos PYME. El sistema fue diseñado como un ecosistema de tres aplicaciones principales, totalmente interconectadas: Un CRM/ERP para la gestión interna de clientes y operaciones, un Onboarding Digital dedicada a los usuarios finales para la solicitud y administración de préstamos, y una plataforma web que permite a los usuarios gestionar sus cuentas y realizar transacciones. 
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Dreamboosters - Software Engineer</h4>
+
+              <span>Octubre 2024 - Junio 2025</span>
+
+              <p class="timeline-text">
+                Colabare con un grandioso equipo de desarrolladores para crear una plataforma web completa para el otorgamiento de créditos inmobiliarios en México, incluyendo un sistema de CRM/ERP para la gestión interna de clientes y operaciones, así como una plataforma web para que los usuarios puedan solicitar y administrar sus créditos de manera eficiente.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">XY Boosters Unicorns - Fullstack Developer Sr.</h4>
+
+              <span>Abril 2024 - Junio 2025</span>
+
+              <p class="timeline-text">
+                Formé parte de un equipo de desarrollo encargado de construir diversos proyectos dedicados a cada una de las diversas áreas de negocio, liderando múltiples iniciativas para crear soluciones tecnológicas ue impulsaron el crecimiento y la eficiencia operativa de la empresa.
+                De estas iniciativas, destacan proyectos como TwoLander, una plataforma especializada en la captación de clientes que buscan invertir en bienes raíces, así también de Xtraordinary la cual es una plataforma dedicada al bienestar infantil y familiar enfocada en la neurociencia y el desarrollo emocional de los infantes, además de la creación de Interlinked siendo una plataforma especializada en la gestión y contratación de conectividad bajo la marca de nuestros clientes, entre otras.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Boldmoves - Fullstack Developer Sr.</h4>
+
+              <span>Abril - Octubre 2024</span>
+
+              <p class="timeline-text">
+                Junto a un equipo pequeño, diseñé y desarrollé múltiples soluciones de Onboarding digital enfocadas en facilitar el acceso a microcréditos para sectores específicos de la población, impulsando el emprendimiento y la inclusión financiera.
+                Con ello implementamos diversos tipos de proveedores de identidad, listas negras y firmas electrónicas como metamap y toku para garantizar la seguridad y autenticidad de los procesos de solicitud y aprobación de créditos, consultar con buro de crédito mediante la API de circulo de crédito, así como la integración con pasarelas de pago para facilitar los pagos y la gestión financiera de los usuarios.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Qbit Mexhico - Fullstack Developer Mid.</h4>
+
+              <span>Junio 2023 - Abril 2024</span>
+
+              <p class="timeline-text">
+                Junto a un equipo pequeño, diseñé y desarrollé múltiples soluciones de Onboarding digital enfocadas en facilitar el acceso a microcréditos para sectores específicos de la población, impulsando el emprendimiento y la inclusión financiera.
+                Con ello implementamos diversos tipos de proveedores de identidad, listas negras y firmas electrónicas como metamap y toku para garantizar la seguridad y autenticidad de los procesos de solicitud y aprobación de créditos, consultar con buro de crédito mediante la API de circulo de crédito, así como la integración con pasarelas de pago para facilitar los pagos y la gestión financiera de los usuarios.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">PROTECO, UNAM - Fullstack Developer Jr.</h4>
+
+              <span>Agosto 2020 - Junio 2023</span>
+
+              <p class="timeline-text">
+                Desarrolle una plataforma web dedicada a la venta de cursos en línea así también de la creación de una aplicación móvil nativa para iOS y Android utilizando SwiftUI y Jetpack Compose respectivamente con el fin de complementar la experiencia de los usuarios al poder acceder a los cursos desde sus dispositivos móviles.
+                Además logre impartir diversos talleres y cursos sobre desarrollo de software y tecnologías emergentes a estudiantes y profesionales con el fin de formar nuevos talentos en el campo del desarrollo de software.
+              </p>
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Formación Profesional</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Diplomado sobre creación de Aplicaciones Móviles para Android y iOS - UNAM</h4>
+
+              <span>Mayo - Diciembre 2022</span>
+
+              <p class="timeline-text">
+                Durante este diplomado adquirí conocimientos sobre el desarrollo de aplicaciones móviles utilizando tecnologías como Jetpack Compose y Swift UI.
+                Aprendí a diseñar, desarrollar y desplegar aplicaciones móviles para las plataformas Android e iOS, así como a integrar servicios backend y bases de datos.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Ingeniería en Software - Facultad de Ingeniería, UNAM</h4>
+
+              <span>Agosto 2017 - Mayo 2022</span>
+
+              <p class="timeline-text">
+                En la universidad logré formarme como un ingeniero en software con sólidos conocimientos en desarrollo de software, algoritmos, estructuras de datos, bases de datos, infraestructura en la nube y redes y seguridad de datos.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Mis habilidades y conocimientos</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Desarrollo web</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Graphic design</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Branding</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">WordPress</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portafolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>Todos</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Desarrollo web</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Aplicaciones móviles</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>Todos</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Desarrollo web</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Aplicaciones móviles</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="desarrollo web">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fundo</h3>
+
+                <p class="project-category">Desarrollo web</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="aplicaciones móviles">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Brawlhalla</h3>
+
+                <p class="project-category">Aplicaciones</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="desarrollo web">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DSM.</h3>
+
+                <p class="project-category">Desarrollo web</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="desarrollo web">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MetaSpark</h3>
+
+                <p class="project-category">Desarrollo web</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="aplicaciones móviles">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category">Aplicaciones</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contacto">
+
+        <header>
+          <h2 class="h2 article-title">Contacto</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4324.400470490429!2d-99.28459641690733!3d19.594636752602657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d21bf3f53bcf9b%3A0x3bb96d9033c259a5!2sPl.%20El%20Obelisco%2C%20Paseo%20San%20Carlos%2C%2054466%20Cdad.%20Nicol%C3%A1s%20Romero%2C%20M%C3%A9x.!5e0!3m2!1ses-419!2smx!4v1764633734168!5m2!1ses-419!2smx"
+              width="300" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Formulario de contacto</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Nombre completo" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Correo electrónico" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Ingresa tu mensaje" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Enviar</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

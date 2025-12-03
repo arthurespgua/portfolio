@@ -157,3 +157,94 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+
+
+// technologies carousel variables
+const carouselTrack = document.querySelector("[data-carousel-track]");
+const carouselPrevBtn = document.querySelector("[data-carousel-prev]");
+const carouselNextBtn = document.querySelector("[data-carousel-next]");
+
+if (carouselTrack && carouselPrevBtn && carouselNextBtn) {
+  const techItems = document.querySelectorAll(".tech-item");
+  const itemWidth = 110; // 80px width + 30px gap
+  let currentPosition = 0;
+  const itemsToScroll = 3;
+
+  // Calculate max position to ensure all items can be viewed
+  const getMaxPosition = () => {
+    const containerWidth = carouselTrack.parentElement.offsetWidth;
+    const totalWidth = techItems.length * itemWidth;
+    // Calculate how much we need to scroll to show all items
+    const maxScroll = totalWidth - containerWidth + 30; // Add padding for last items
+    return Math.max(0, maxScroll);
+  };
+
+  // Update carousel position
+  const updateCarousel = () => {
+    carouselTrack.style.transform = `translateX(-${currentPosition}px)`;
+    
+    // Update button states
+    carouselPrevBtn.style.opacity = currentPosition === 0 ? '0.5' : '1';
+    carouselPrevBtn.style.cursor = currentPosition === 0 ? 'default' : 'pointer';
+    
+    const maxPosition = getMaxPosition();
+    carouselNextBtn.style.opacity = currentPosition >= maxPosition ? '0.5' : '1';
+    carouselNextBtn.style.cursor = currentPosition >= maxPosition ? 'default' : 'pointer';
+  };
+
+  // Next button
+  carouselNextBtn.addEventListener("click", function () {
+    const maxPosition = getMaxPosition();
+    if (currentPosition < maxPosition) {
+      currentPosition = Math.min(currentPosition + (itemWidth * itemsToScroll), maxPosition);
+      updateCarousel();
+    }
+  });
+
+  // Previous button
+  carouselPrevBtn.addEventListener("click", function () {
+    if (currentPosition > 0) {
+      currentPosition = Math.max(currentPosition - (itemWidth * itemsToScroll), 0);
+      updateCarousel();
+    }
+  });
+
+  // Handle window resize
+  window.addEventListener("resize", () => {
+    const maxPosition = getMaxPosition();
+    if (currentPosition > maxPosition) {
+      currentPosition = maxPosition;
+      updateCarousel();
+    }
+  });
+
+  // Initial update
+  updateCarousel();
+
+  // Auto-scroll functionality (optional)
+  let autoScrollInterval;
+  
+  const startAutoScroll = () => {
+    autoScrollInterval = setInterval(() => {
+      const maxPosition = getMaxPosition();
+      if (currentPosition >= maxPosition) {
+        currentPosition = 0;
+      } else {
+        currentPosition = Math.min(currentPosition + itemWidth, maxPosition);
+      }
+      updateCarousel();
+    }, 3000);
+  };
+
+  const stopAutoScroll = () => {
+    clearInterval(autoScrollInterval);
+  };
+
+  // Start auto-scroll
+  startAutoScroll();
+
+  // Pause auto-scroll on hover
+  carouselTrack.parentElement.parentElement.addEventListener("mouseenter", stopAutoScroll);
+  carouselTrack.parentElement.parentElement.addEventListener("mouseleave", startAutoScroll);
+}
